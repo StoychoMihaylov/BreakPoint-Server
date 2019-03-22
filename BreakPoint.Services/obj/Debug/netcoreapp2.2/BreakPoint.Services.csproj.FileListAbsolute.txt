@@ -1,0 +1,12 @@
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Services.deps.json
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Services.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Services.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.csprojAssemblyReference.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.csproj.CoreCompileInputs.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.AssemblyInfoInputs.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.AssemblyInfo.cs
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Data.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Data.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.csproj.CopyComplete

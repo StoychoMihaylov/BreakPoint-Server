@@ -1,0 +1,16 @@
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\BreakPoint.Data.deps.json
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\BreakPoint.Data.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\obj\Debug\netcoreapp2.1\BreakPoint.Data.csprojAssemblyReference.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\obj\Debug\netcoreapp2.1\BreakPoint.Data.csproj.CoreCompileInputs.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\obj\Debug\netcoreapp2.1\BreakPoint.Data.AssemblyInfoInputs.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\obj\Debug\netcoreapp2.1\BreakPoint.Data.AssemblyInfo.cs
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\BreakPoint.Data.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Hosting.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Hosting.xml
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\obj\Debug\netcoreapp2.1\BreakPoint.Data.csproj.CopyComplete
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\obj\Debug\netcoreapp2.1\BreakPoint.Data.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\obj\Debug\netcoreapp2.1\BreakPoint.Data.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\BreakPoint.Data.runtimeconfig.json
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\BreakPoint.Data.runtimeconfig.dev.json
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Data\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.SqlServer.xml
