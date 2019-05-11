@@ -13,6 +13,8 @@
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<TokenManager> Tokens { get; set; }
+
         public int SaveChanges()
         {
             return 0;

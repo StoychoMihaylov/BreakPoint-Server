@@ -10,3 +10,7 @@ C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcore
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Data.dll
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Data.pdb
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\obj\Debug\netcoreapp2.2\BreakPoint.Services.csproj.CopyComplete
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Models.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\BreakPoint.Models.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Services\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.SqlServer.xml

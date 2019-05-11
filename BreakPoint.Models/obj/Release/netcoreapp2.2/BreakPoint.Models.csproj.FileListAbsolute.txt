@@ -1,0 +1,8 @@
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\bin\Release\netcoreapp2.2\BreakPoint.Models.deps.json
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\bin\Release\netcoreapp2.2\BreakPoint.Models.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\bin\Release\netcoreapp2.2\BreakPoint.Models.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\obj\Release\netcoreapp2.2\BreakPoint.Models.csproj.CoreCompileInputs.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\obj\Release\netcoreapp2.2\BreakPoint.Models.AssemblyInfoInputs.cache
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\obj\Release\netcoreapp2.2\BreakPoint.Models.AssemblyInfo.cs
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\obj\Release\netcoreapp2.2\BreakPoint.Models.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.Models\obj\Release\netcoreapp2.2\BreakPoint.Models.pdb
