@@ -7,6 +7,8 @@
     {
         DbSet<User> Users { get; set; }
 
+        DbSet<TokenManager> Tokens { get; set; }
+
         int SaveChanges();
     }
 }

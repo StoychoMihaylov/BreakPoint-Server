@@ -1,9 +1,10 @@
 ﻿namespace BreakPoint.App.Controllers
 {
+    using BreakPoint.Models.BindingModels.Account;
     using BreakPoint.Services.Interfaces;
     using Microsoft.AspNetCore.Mvc;
 
-    [Route("api/account")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AccountController : Controller
     {
@@ -17,9 +18,47 @@
         // api/account/register
         [HttpPost]
         [Route("register")]
-        public IActionResult Index()
+        public IActionResult RegisterAndLogin(RegisterUserBindingModel bm)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (bm.Password != bm.ConfirmPassword)
+            {
+                return BadRequest("Invalid credentials!");
+            }
+
+            var tokenBearer = this.service.CreateNewUserAccount(bm);
+  
+            if (tokenBearer == string.Empty)
+            {
+                return new BadRequestResult();
+            }
+
+            // created!
+            return Ok(tokenBearer);
+        }
+
+        // api/account/login
+        [HttpPost]
+        [Route("login")]
+        public IActionResult Login(LoginUserBindingModel bm)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            string token = this.service.LoginUser(bm);
+
+            if (token.Length < 1)
+            {
+                return BadRequest("Wrong credentials!");
+            }
+
+            return Ok(token);
         }
     }
 }
