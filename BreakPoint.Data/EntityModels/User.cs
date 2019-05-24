@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class User
     {
@@ -21,6 +22,19 @@
 
         [Required]
         public string Salt { get; set; }
+
+        [MaxLength(50)]
+        public string Nickname { get; set; }
+
+        public string Location { get; set; }
+
+        public string Gender { get; set; }
+
+        public string DanceStyle { get; set; }
+
+        public int Skilled { get; set; } // likes
+
+        public virtual ICollection<User> Followers { get; set; } // Every user has other users as followers
 
         public virtual ICollection<TokenManager> Tokens { get; set;}
     }

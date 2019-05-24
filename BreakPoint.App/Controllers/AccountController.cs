@@ -30,15 +30,15 @@
                 return BadRequest("Invalid credentials!");
             }
 
-            var tokenBearer = this.service.CreateNewUserAccount(bm);
+            var userCredentials = this.service.CreateNewUserAccount(bm);
   
-            if (tokenBearer == string.Empty)
+            if (userCredentials == null)
             {
                 return new BadRequestResult();
             }
 
             // created!
-            return Ok(tokenBearer);
+            return Ok(userCredentials);
         }
 
         // api/account/login
@@ -51,14 +51,14 @@
                 return BadRequest(ModelState);
             }
 
-            string token = this.service.LoginUser(bm);
+            var userCredentials = this.service.LoginUser(bm);
 
-            if (token.Length < 1)
+            if (userCredentials == null)
             {
                 return BadRequest("Wrong credentials!");
             }
 
-            return Ok(token);
+            return Ok(userCredentials);
         }
     }
 }

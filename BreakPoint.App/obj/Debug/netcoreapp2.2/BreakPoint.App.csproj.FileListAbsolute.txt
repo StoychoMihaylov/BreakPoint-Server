@@ -19,3 +19,5 @@ C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.App\obj\Debug\netcoreapp2.
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.App\obj\Debug\netcoreapp2.2\BreakPoint.App.csproj.CopyComplete
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.App\obj\Debug\netcoreapp2.2\BreakPoint.App.dll
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.App\obj\Debug\netcoreapp2.2\BreakPoint.App.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.App\bin\Debug\netcoreapp2.2\BreakPoint.UnitTests.dll
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.App\bin\Debug\netcoreapp2.2\BreakPoint.UnitTests.pdb

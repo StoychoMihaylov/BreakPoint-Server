@@ -14,4 +14,10 @@
     <ProjectReference Include="..\BreakPoint.Models\BreakPoint.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="BreakPoint.UnitTests">
+      <HintPath>..\BreakPoint.UnitTests\bin\Debug\netcoreapp2.2\BreakPoint.UnitTests.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

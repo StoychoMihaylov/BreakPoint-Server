@@ -6,6 +6,7 @@
     using BreakPoint.Data.EntityModels;
     using BreakPoint.Data.Interfaces;
     using BreakPoint.Models.BindingModels.Account;
+    using BreakPoint.Models.ViewModels.Account;
     using BreakPoint.Services.Interfaces;
     using BreakPoint.Services.Utilities;
 
@@ -16,12 +17,11 @@
         {
         }
 
-        public string CreateNewUserAccount(RegisterUserBindingModel bm)
+        public AccountLoginViewModel CreateNewUserAccount(RegisterUserBindingModel bm)
         {
             try
-            {
-                // returns byte[][] array of 2 elements(hashed password and salt)
-                var passwordHashAndSalt = this.GenerateSaltedHash(bm.Password);
+            {                                                                        
+                var passwordHashAndSalt = this.GenerateSaltedHash(bm.Password); // returns byte[][] array of 2 elements(hashed password and salt)
 
                 User newUser = new User();
                 newUser.Name = bm.Name;
@@ -34,7 +34,7 @@
             }
             catch (Exception)
             {
-                return "";
+                return null;
             }
 
             LoginUserBindingModel loginBm = new LoginUserBindingModel()
@@ -44,7 +44,6 @@
             };
 
             var tokenBearer = LoginUser(loginBm);
-
 
             return tokenBearer;
         }
@@ -79,15 +78,19 @@
             }
         }
 
-        public string LoginUser(LoginUserBindingModel bm)
+        public AccountLoginViewModel LoginUser(LoginUserBindingModel bm)
         {
             string tokenBearer = string.Empty;
+            int userId = int.MinValue;
+
             try
             {
                 var user = this.Context
                 .Users
                 .Where(u => u.Email == bm.Email)
                 .First();
+
+                userId = user.Id; // taking the id to send it to the client
 
                 var passwordHash = GenerateHashOfPassword(bm.Password, user.Salt);
                 if (user.PasswordHash == passwordHash)
@@ -107,11 +110,16 @@
             }
             catch (Exception)
             {
-
-                return string.Empty;
+                return null;
             }
 
-            return tokenBearer;
+            AccountLoginViewModel viewModel = new AccountLoginViewModel()
+            {
+                UserId = userId,
+                Token = tokenBearer
+            };
+
+            return viewModel;
         }
 
         private string GenerateHashOfPassword(string password, string salt)

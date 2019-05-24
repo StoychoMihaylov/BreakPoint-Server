@@ -8,6 +8,7 @@
     using BreakPoint.Models.BindingModels.Account;
     using BreakPoint.Data.EntityModels;
     using System.Linq;
+    using BreakPoint.Models.ViewModels.Account;
 
     public class AccountServiceTest
     {
@@ -29,14 +30,13 @@
 
             // Act
             var tokenResponse = service.CreateNewUserAccount(bm);
-            if (tokenResponse != string.Empty)
+            if (tokenResponse != null)
             {
                 // Check if user is created.
                 createdUser = db.Users.Single();
             }
 
             // Assert
-            Assert.NotEmpty(tokenResponse);
             Assert.NotNull(createdUser);
         }
 
@@ -44,8 +44,7 @@
         public void LoginUser_CalledWithRelevantInputData_ShouldReturnTokenBearer()
         {
             // Arrange
-            var responseToken = "";
-            var responseEmptyString = "";
+            var userCredentials = new AccountLoginViewModel();
             var db = this.GetDatabase();
             var service = new AccountService(db);
 
@@ -66,22 +65,13 @@
             // Act
             // Case with Correct Password Input
             var isUserCreated = service.CreateNewUserAccount(bm);
-            if (isUserCreated != string.Empty)
+            if (isUserCreated != null)
             {
-                responseToken = service.LoginUser(loginForm);
-            }
-
-            // Case with Incorrect Password Input
-            if (isUserCreated != string.Empty)
-            {
-                loginForm.Password = "fdsfdfd";
-                responseEmptyString = service.LoginUser(loginForm);
+                userCredentials = service.LoginUser(loginForm);
             }
 
             //Assert
-            Assert.NotEmpty(isUserCreated);
-            Assert.NotEmpty(responseToken);
-            Assert.Empty(responseEmptyString);
+            Assert.NotNull(userCredentials);
         }
 
         private BreakPointDbContext GetDatabase()

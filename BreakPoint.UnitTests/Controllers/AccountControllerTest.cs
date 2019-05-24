@@ -2,6 +2,7 @@
 {
     using BreakPoint.App.Controllers;
     using BreakPoint.Models.BindingModels.Account;
+    using BreakPoint.Models.ViewModels.Account;
     using BreakPoint.Services.Interfaces;
     using Microsoft.AspNetCore.Mvc;
     using Moq;
@@ -13,7 +14,11 @@
         public void Post_RegisterAndLogin_ShouldReturnStatusCode201()
         {
             // Arrange
-            var token = "tokenBearer-tokenBearer-tokenBearer";
+            var userCredentials = new AccountLoginViewModel()
+            {
+                UserId = 1,
+                Token = "Token-Token-Token"
+            };
             RegisterUserBindingModel bm = new RegisterUserBindingModel()
             {
                 Name = "Gosho",
@@ -25,7 +30,7 @@
             var serviceMock = new Mock<IAccountService>(); // Using Moq to mock the service
             serviceMock
                 .Setup(s => s.CreateNewUserAccount(bm))
-                .Returns(token);
+                .Returns(userCredentials);
 
             var controller = new AccountController(serviceMock.Object);
 

@@ -1,10 +1,11 @@
 ﻿namespace BreakPoint.Services.Interfaces
 {
     using BreakPoint.Models.BindingModels.Account;
+    using BreakPoint.Models.ViewModels.Account;
 
     public interface IAccountService
     {
-        string CreateNewUserAccount(RegisterUserBindingModel bm);
-        string LoginUser(LoginUserBindingModel bm);
+        AccountLoginViewModel CreateNewUserAccount(RegisterUserBindingModel bm);
+        AccountLoginViewModel LoginUser(LoginUserBindingModel bm);
     }
 }
