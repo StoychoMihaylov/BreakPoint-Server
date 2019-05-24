@@ -45,12 +45,21 @@ namespace BreakPoint.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("DanceStyle");
+
                     b.Property<string>("Email")
                         .IsRequired();
+
+                    b.Property<string>("Gender");
+
+                    b.Property<string>("Location");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(20);
+
+                    b.Property<string>("Nickname")
+                        .HasMaxLength(50);
 
                     b.Property<string>("PasswordHash")
                         .IsRequired();
@@ -58,7 +67,13 @@ namespace BreakPoint.Data.Migrations
                     b.Property<string>("Salt")
                         .IsRequired();
 
+                    b.Property<int>("Skilled");
+
+                    b.Property<int?>("UserId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Users");
                 });
@@ -66,7 +81,14 @@ namespace BreakPoint.Data.Migrations
             modelBuilder.Entity("BreakPoint.Data.EntityModels.TokenManager", b =>
                 {
                     b.HasOne("BreakPoint.Data.EntityModels.User", "User")
-                        .WithMany("Token")
+                        .WithMany("Tokens")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("BreakPoint.Data.EntityModels.User", b =>
+                {
+                    b.HasOne("BreakPoint.Data.EntityModels.User")
+                        .WithMany("Followers")
                         .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
