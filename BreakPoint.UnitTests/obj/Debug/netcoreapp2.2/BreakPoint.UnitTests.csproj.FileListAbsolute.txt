@@ -14,7 +14,6 @@ C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\bin\Debug\netcor
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\bin\Debug\netcoreapp2.2\BreakPoint.Data.pdb
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\bin\Debug\netcoreapp2.2\BreakPoint.Models.pdb
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\bin\Debug\netcoreapp2.2\BreakPoint.Services.pdb
-C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.csprojAssemblyReference.cache
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.csproj.CoreCompileInputs.cache
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.AssemblyInfoInputs.cache
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.AssemblyInfo.cs

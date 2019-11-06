@@ -13,15 +13,13 @@
     public class AccountService : Service, IAccountService
     {
         public AccountService(IBreakPointDbContext context)
-            : base(context)
-        {
-        }
+            : base(context) { }
 
         public AccountLoginViewModel CreateNewUserAccount(RegisterUserBindingModel bm)
         {
             try
             {                                                                        
-                var passwordHashAndSalt = this.GenerateSaltedHash(bm.Password); // returns byte[][] array of 2 elements(hashed password and salt)
+                var passwordHashAndSalt = this.GenerateSaltedHash(bm.Password); // Returns byte[][] array of 2 elements(hashed password and salt)
 
                 User newUser = new User();
                 newUser.Name = bm.Name;
@@ -37,6 +35,7 @@
                 return null;
             }
 
+            // After user has been created login the user (return token)
             LoginUserBindingModel loginBm = new LoginUserBindingModel()
             {
                 Email = bm.Email,

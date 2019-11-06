@@ -70,7 +70,7 @@
                 userCredentials = service.LoginUser(loginForm);
             }
 
-            //Assert
+            // Assert
             Assert.NotNull(userCredentials);
         }
 
