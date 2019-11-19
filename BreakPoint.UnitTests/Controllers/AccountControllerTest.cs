@@ -38,7 +38,12 @@
             var response = controller.RegisterAndLogin(bidingModel);
 
             // Assert
+            Assert.NotNull(response);
             Assert.IsType<OkObjectResult>(response);
+            var result = response as OkObjectResult;
+            var model = result.Value as AccountLoginViewModel;
+            var modelId = model.UserId;
+            Assert.Equal(1, modelId);
         }
 
     }
