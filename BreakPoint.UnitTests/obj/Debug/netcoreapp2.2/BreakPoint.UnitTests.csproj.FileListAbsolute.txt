@@ -20,3 +20,4 @@ C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcor
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.csproj.CopyComplete
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.dll
 C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.pdb
+C:\Users\stmih\source\repos\BreakPoint-API\BreakPoint.UnitTests\obj\Debug\netcoreapp2.2\BreakPoint.UnitTests.csprojAssemblyReference.cache

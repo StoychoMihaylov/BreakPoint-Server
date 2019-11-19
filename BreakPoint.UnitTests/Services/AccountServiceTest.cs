@@ -72,6 +72,10 @@
 
             // Assert
             Assert.NotNull(userCredentials);
+            var userId = userCredentials.Token;
+            Assert.NotEmpty(userId);
+            var token = userCredentials.Token;
+            Assert.NotEqual(0, token.Length);
         }
 
         private BreakPointDbContext GetDatabase()
